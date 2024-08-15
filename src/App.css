@@ -1,0 +1,128 @@
+/* Добавьте это в начало файла */
+body {
+  background-color: #1d1d1d; /* Темно-серый фон */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #e0e0e0; /* Пастельный неяркий белый цвет для текста */
+}
+
+/* Существующий код */
+.App {
+  text-align: center;
+  background: transparent; /* Прозрачный фон для основного контейнера */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #e0e0e0; /* Пастельный неяркий белый цвет для текста */
+}
+
+.App-link {
+  color: #e0e0e0; /* Пастельный неяркий белый цвет для ссылок */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: auto; /* Let the table width be determined by its content */
+  margin: 0 auto; /* Center the table horizontally */
+  border: 3px solid #e0e0e0; /* Пастельный неяркий белый цвет для внешних границ */
+}
+
+th, td {
+  border: 1px solid rgba(224, 224, 224, 0.2); /* Пастельный неяркий белый цвет для внутренних границ */
+  padding: 10px 15px; /* Increased padding for more space around text */
+  color: #e0e0e0; /* Пастельный неяркий белый цвет для текста в таблице */
+}
+
+th {
+  border-bottom: 2px solid #e0e0e0; /* Пастельный неяркий белый цвет для границы заголовков */
+  font-weight: bold;
+  background-color: rgba(224, 224, 224, 0.05); /* Светлый фон для заголовков */
+  text-align: center; /* Центрирование текста в заголовке */
+  font-size: 1.2em; /* Увеличение размера шрифта в заголовке */
+}
+
+/* Bold text for specific columns */
+td:first-child, /* Token column */
+td:nth-child(3), /* USD price column */
+td:last-child { /* Jobs per Hour column */
+  font-weight: bold;
+  color: #e0e0e0; /* Пастельный неяркий белый цвет для текста */
+}
+
+/* Center the text in Jobs per Hour column */
+td:last-child {
+  text-align: center;
+}
+
+/* Gradient background based on position in the table */
+tbody tr:nth-child(1) {
+  background-color: rgba(144, 238, 144, 0.3); /* Light green */
+}
+
+tbody tr:nth-child(2),
+tbody tr:nth-child(3) {
+  background-color: rgba(173, 255, 47, 0.3); /* Light yellow-green */
+}
+
+tbody tr:nth-child(4),
+tbody tr:nth-child(5),
+tbody tr:nth-child(6) {
+  background-color: rgba(255, 255, 0, 0.3); /* Light yellow */
+}
+
+tbody tr:nth-child(7),
+tbody tr:nth-child(8),
+tbody tr:nth-child(9) {
+  background-color: rgba(255, 165, 0, 0.3); /* Light orange */
+}
+
+tbody tr:nth-child(10),
+tbody tr:nth-child(11),
+tbody tr:nth-child(12) {
+  background-color: rgba(255, 69, 0, 0.3); /* Light red-orange */
+}
+
+tbody tr:nth-child(13),
+tbody tr:nth-child(14),
+tbody tr:nth-child(15) {
+  background-color: rgba(255, 99, 71, 0.3); /* Light red */
+}
+
+/* Link styling */
+table a {
+  color: #e0e0e0 !important; /* Пастельный неяркий белый цвет для ссылок */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+table a:hover {
+  text-decoration: underline; /* Подчеркивание при наведении для лучшего UX */
+}
